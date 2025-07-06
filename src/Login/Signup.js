@@ -46,7 +46,7 @@ function Login() {
         <div className='card shadow-lg w-100' style={{maxWidth:"480px"}}>
             <div className='card-body'>
                 <div className='text-center'>
-                    <h1 className='card-title h3'>Sign in</h1>
+                    <h1 className='card-title h3'>Sign up</h1>
                     <p className="card-text text-muted">Sign in below to access your account</p>
                 </div>
                 <div className='mt-4'>
@@ -87,7 +87,7 @@ function Login() {
                         <div className='d-grid'>
                             <Link to="/login" className="nav-link">
                             <button type='submit' className='btn-dark btn-lg btn'>
-                                Sign in
+                                Sign up
                             </button>
                             </Link>
                         </div>
