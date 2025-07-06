@@ -1,0 +1,12 @@
+.category-image{
+    width:60px;
+    height:60px;
+    border-radius: 10px;
+    border: 3px solid white;
+}
+.category-list-container {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 10px; /* optional: for scrollbar space */
+}

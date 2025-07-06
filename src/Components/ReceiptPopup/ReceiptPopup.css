@@ -1,0 +1,82 @@
+/* Overlay Styling */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Popup Receipt Styling */
+.popup-content {
+  background: white;
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  color: #000;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  font-family: Arial, sans-serif;
+}
+
+.receipt-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.receipt-table th,
+.receipt-table td {
+  padding: 5px;
+  font-size: 14px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+.receipt-summary .summary-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+
+.receipt-summary .total {
+  font-weight: bold;
+  border-top: 1px solid #000;
+  padding-top: 6px;
+}
+
+.popup-actions {
+  text-align: right;
+}
+
+/* Print-Only Settings */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .popup-content,
+  .popup-content * {
+    visibility: visible;
+  }
+
+  .popup-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    margin: 0 auto;
+    box-shadow: none !important;
+    background: white !important;
+    z-index: 10000;
+  }
+
+  .popup-overlay {
+    background: none !important;
+  }
+}
