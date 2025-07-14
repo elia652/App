@@ -8,7 +8,8 @@ import ManageItems from './pages/ManageItems/ManageItems';
 import ManageUsers from './pages/ManageUsers/ManageUsers';
 import Login from './Login/Login';
 import Signup from './Login/Signup';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import OrderHistory from './Components/OrderHistory/OrderHistory';
 import { Toaster } from 'react-hot-toast';
 import { useContext } from 'react';
@@ -33,6 +34,7 @@ function App() {
     <>
       {location.pathname !== "/login" &&  location.pathname!=="/signup" &&<MenuBar />}
       <Toaster />
+      
       <Routes>
 
         <Route
